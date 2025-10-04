@@ -1,0 +1,77 @@
+/* Затемненный фон бэкдропа (псевдоэлемент ::backdrop) */
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+}
+
+.dialog {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+   padding: 20px;
+  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background: white;
+  overflow: hidden;
+}
+
+/* Контейнер содержимого внутри dialog */
+.container {
+  padding: 24px; /* Внутренние отступы */
+}
+
+/* Заголовок модального окна */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Текст заголовка */
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Кнопка закрытия */
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #64748b;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.closeButton:hover {
+  color: #475569;
+  background-color: #f1f5f9;
+}
+
+/* Тело модального окна */
+.body {
+  margin-bottom: 20px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Футер модального окна (для кнопок) */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
