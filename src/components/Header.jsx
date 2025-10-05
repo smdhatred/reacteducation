@@ -25,7 +25,7 @@ export default function Header() {
         <header className="header">
             <img src={logo} alt="" />
             <span>Current time: {time.toLocaleTimeString()}</span>
-            <img src={helpIcon} onClick = {toggleHelp} alt="" />
+            <img src={helpIcon} onClick = {toggleHelp} style={{cursor : 'pointer'}} alt="" />
             
             <Modal style={{ justifyItems: 'center' }}  
                 show={isHelpOpen}>
